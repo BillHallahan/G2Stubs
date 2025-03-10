@@ -8,11 +8,12 @@ module G2.Symbolic ( mkSymbolic
 
 -- | Generates a fresh symbolic variable during symbolic execution
 mkSymbolic :: IO a
-mkSymbolic = return symgen
+mkSymbolic = return symgen_G2_INTERNAL
 
 -- Hack to get a SymGen somewhere in base
-symgen :: a
-symgen = symgen
+{-# NOINLINE symgen_G2_INTERNAL #-}
+symgen_G2_INTERNAL :: a
+symgen_G2_INTERNAL = error "symgen"
 
 {-# NOINLINE assume #-}
 assume :: Bool -> a -> a
