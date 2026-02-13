@@ -1,6 +1,6 @@
 module SMT where
 
-import SMT.String.GHC.Base
+import SMT.string.GHC.Base
 
-import SMT.SeqInt.GHC.Base
+import SMT.seq-int.GHC.Base
 
