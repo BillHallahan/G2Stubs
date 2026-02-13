@@ -1,6 +1,6 @@
 {-# LANGUAGE BangPatterns, MagicHash, RankNTypes, ViewPatterns #-}
 
-module SMT.string.GHC.Base where
+module SMT.String.GHC.Base where
 
 import GHC.Prim2
 
